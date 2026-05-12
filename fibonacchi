@@ -1,0 +1,15 @@
+public class fibonacchi {
+    public static void main(String[] args) {
+        int n = 6;
+        System.out.println(number(n));
+        
+    }
+
+    static int number(int n){
+        if(n==1||n==0){
+            return n;
+        }
+        return number(n-1)+number(n-2);
+
+    }
+}
