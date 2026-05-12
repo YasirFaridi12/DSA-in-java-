@@ -1,0 +1,47 @@
+public class finddublicatenumber { 
+    public static void main(String[] args) {
+        int[] arr = {2,3,0,4,3,1};
+        System.out.println(dublicate(arr));
+        
+
+        static int repeat(int[] arr){
+        for(int i =0; i<arr.length; i++){   
+            if(arr[i] != i ){
+                return arr[i];
+            }
+            
+        }return -1;
+
+    }
+
+
+    
+public class finddublicatenumber { 
+    public static void main(String[] args) {
+        int[] arr = {2,3,0,4,3,1};
+        System.out.println(dublicate(arr));
+
+    }
+
+    static int dublicate(int[] arr){
+        int i = 0;
+        while(i<arr.length){
+            int complete = arr[i];
+            if(arr[i]!=arr[complete]){
+                swap(arr,i,complete);
+            }else{
+                i++;
+            }
+        }return repeat(arr);
+        
+
+    
+
+     static void swap(int[] arr,int i , int complete){
+        int temp = arr[complete];
+        arr[complete] = arr[i];
+        arr[i]= temp;
+
+    }
+ 
+}
