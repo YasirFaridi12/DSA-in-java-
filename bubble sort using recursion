@@ -1,0 +1,33 @@
+import java.util.Arrays;
+
+public class bubble{
+    public static void main(String[] args){
+        int [] arr = {3,5,8,4,6,2};
+        sort(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
+       
+        
+
+    }
+    static void sort(int[] arr,int c, int r){
+    
+        if(r ==0){
+            return;
+        }
+        if(c<r){
+            if(arr[c]>arr[c+1]){
+                int temp = arr[c];
+                arr[c] = arr[c+1];
+                arr[c+1] = temp;
+            }
+            sort(arr,c+1,r);
+        }
+        if(c>=r){
+            sort(arr,0,r-1);
+        }
+        
+        
+       
+    }
+    
+}
