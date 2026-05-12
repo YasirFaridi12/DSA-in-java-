@@ -1,0 +1,22 @@
+public class reversedigit {
+    public static void main(String[] args) {
+        System.out.println(number(1234));
+        
+    }
+    static int sum =0;
+    static int number(int n){
+        if(n==0){
+            return sum;
+        }
+        int rem = n%10;
+
+        sum = sum*10 +rem;
+
+        return number(n/10);
+
+
+
+
+    }
+    
+}
