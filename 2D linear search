@@ -1,0 +1,36 @@
+public class dlinearsearch {
+    public static void main(String[] args) {
+        int[][] arr = {
+            {12,37,54},
+            {85,39,99,19},
+            {12,88}
+        };
+        int target = 205;
+        int ans = search(arr,target);
+        System.out.println(ans);
+
+    }
+
+    static int search(int[][]arr,int target){
+
+        int start = 0;
+        int end = arr.length;
+        if (start == end){
+            return -1;
+        }
+
+        for(int i = 0; i < arr.length; i++){
+            for(int j =0; j < arr[i].length;j++){
+                if(arr[i][j]==target){
+                    return target;
+                }
+
+            }
+            
+
+        }return -1;
+
+    }
+
+    
+}
