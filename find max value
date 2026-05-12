@@ -1,0 +1,29 @@
+public class max {
+    public static void main(String[] args) {
+        int[] arr = {2,4,6,8,0,5,7,};
+        int ans = search(arr);
+        System.out.println("the max value of the given array is :");
+        System.out.println(ans);
+        
+    }
+
+    static int search(int[] arr){
+
+        int start = 0;
+        int end = arr.length;
+        if(start == end ){
+            return -1;
+        }
+
+        int ans =0;
+        for(int i =0;i<arr.length;i++){
+            if(arr[i]>ans){
+                ans = arr[i];
+            }
+        }return ans;
+
+    }
+    
+
+
+}
