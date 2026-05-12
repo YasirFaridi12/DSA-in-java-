@@ -1,0 +1,23 @@
+public class remove_apple {
+    public static void main(String[] args){
+        rem("","abcdapplecdge");
+
+    }
+    static void rem( String p ,String up){
+        if(up.isEmpty()){ 
+            System.out.println(p);
+            return;
+            
+        }
+        if(up.startsWith("apple")){
+            rem( p ,up.substring(5));
+        }
+        else{
+            rem(p+up.charAt(0) ,up.substring(1));
+        }
+        
+
+
+        
+    }
+}
